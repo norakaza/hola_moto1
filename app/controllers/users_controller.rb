@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  def index         # GET /restaurants
+  def index
+      # GET /restaurants
   end
 
   def show          # GET /restaurants/:id
