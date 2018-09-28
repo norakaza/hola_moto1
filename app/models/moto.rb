@@ -1,4 +1,4 @@
-class Moto <
+class Moto < ApplicationRecord
   belongs_to :user
   include PgSearch
   pg_search_scope :search_by_name_and_brand_and_moto_type,
