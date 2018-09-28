@@ -1,9 +1,10 @@
 class UsersController < ApplicationController
   def index
-      # GET /restaurants
+    @users = User.all      # GET /restaurants
   end
 
-  def show          # GET /restaurants/:id
+  def show
+    @user = User.find(params[:id])     # GET /restaurants/:id
   end
 
   def new           # GET /restaurants/new
