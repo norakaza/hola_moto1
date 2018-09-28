@@ -11,6 +11,6 @@
 
 <ul>
   <% @motos.each do |moto| %>
-    <li><%= link_to moto.name, moto_path(moto) %></li>
+    <li><%= link_to moto.model, moto_path(moto) %></li>
   <% end %>
 </ul>
