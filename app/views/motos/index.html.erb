@@ -1,0 +1,16 @@
+<h1>Motos</h1>
+<%= form_tag motos_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Find a moto"
+  %>
+<% end %>
+
+<!-- the list of motos-->
+
+<ul>
+  <% @motos.each do |moto| %>
+    <li><%= link_to moto.name, moto_path(moto) %></li>
+  <% end %>
+</ul>
